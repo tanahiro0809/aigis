@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+$spContentWidth: 768px;
+
+@mixin mq-pc {
+  @media print, all and (min-width: ($spContentWidth)) {
+    @content;
+  }
+}
